@@ -1,11 +1,11 @@
 import cv2
 import sys
 import numpy as np
-from create_LM_filters import LMFilters
-from convolve_LM_filters import preprocessImageWithKernles
-from get_final_vectors import createVector
-from K_Means import KMeansLMfilters
-from reconstruct_image import reconstructImage
+from TextonsSeg.create_LM_filters import LMFilters
+from TextonsSeg.convolve_LM_filters import preprocessImageWithKernles
+from TextonsSeg.get_final_vectors import createVector
+from TextonsSeg.K_Means import KMeansLMfilters
+from TextonsSeg.reconstruct_image import reconstructImage
 import random
 random.seed(128)
 
