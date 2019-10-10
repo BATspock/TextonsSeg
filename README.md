@@ -31,7 +31,7 @@ To run the script
 from texton_color_utils import Textons
 
 im = cv2.imread('path_to_image')
-textons = Textons(im, number of clusters, number of iterations, assignemnet type)
+textons = Textons(im, number_of_clusters, number_of_iterations, assignment_type)
 tex = textons.textons()
 cv2.imshow("window name", tex)
 cv2.waitKey(0)
@@ -51,7 +51,7 @@ cv2.destroyAllWindows()
 ```
 
 
-*  Advisable to keep number of iterations high (recommended>=100) for reproducibility of result
+*  Advisable to keep number of iterations high (recommended >= 100) for reproducibility of result
 
 ### Improved Reproducibility of Result
 * Added feature to make the results reproducible 
