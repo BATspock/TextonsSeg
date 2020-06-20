@@ -25,27 +25,35 @@ assignment type 'DEFINED' is better suited when number of clusters is less than 
 however the assignemnt types do not impact the performance of the code in any significant way
 
 
-To run the script 
+## Executing the script
+
+Install the TextonsSeg module from PyPi 
 
 ```
-from texton_color_utils import Textons
+pip install TextonsSeg==0.0.2
+```
 
-im = cv2.imread('path_to_image')
-textons = Textons(im, number_of_clusters, number_of_iterations, assignment_type)
-tex = textons.textons()
-cv2.imshow("window name", tex)
+After the install is complete. You can call the module in your python file as shown below:
+
+```
+from TextonsSeg import Textons
+import cv2
+img = cv2.imread('path to image')
+tex = Textons(img, number of centroids, number of iterations, assignment mode)
+im = tex.textons()
+cv2.imshow('window name', im)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
 Example 
 ```
-from texton_color_utils import Textons
-
+from TextonsSeg import Textons
+import cv2
 im = cv2.imread('image.jpg')
-textons = Textons(im, 5, 25, 1)
-tex = textons.textons()
-cv2.imshow("check", tex)
+tex = Textons(img, 3, 25, 1)
+im = tex.textons()
+cv2.imshow('check', im)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
