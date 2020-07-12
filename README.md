@@ -40,8 +40,8 @@ from TextonsSeg import Textons
 import cv2
 img = cv2.imread('path to image')
 tex = Textons(img, number of centroids, number of iterations, assignment mode)
-im = tex.textons()
-cv2.imshow('window name', im)
+img = tex.textons()
+cv2.imshow('window name', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
@@ -51,9 +51,9 @@ Example
 from TextonsSeg import Textons
 import cv2
 im = cv2.imread('image.jpg')
-tex = Textons(img, 3, 25, 1)
-im = tex.textons()
-cv2.imshow('check', im)
+tex = Textons(im, 3, 25, 1)
+img = tex.textons()
+cv2.imshow('check', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
